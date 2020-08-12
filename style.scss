@@ -1,0 +1,55 @@
+@import "./base/reset";
+@import "./base/colors";
+@import "./abstracts/mixins";
+
+@keyframes a {
+    from {transform: translateY(-10vh);}
+    to {transform: translateY(60vh);}
+} 
+
+body {
+    @include background__picture;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+        &__items {
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+            margin-top: -250px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 56px;
+            @include font__family;
+            color: $text-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include font__family;
+            animation: a 1.5s ease-out 1 forwards;
+        }
+
+        .item1 {            
+            background-color: $color-first;
+            animation-delay: 0.5s;
+        }
+
+        .item2 {
+            background-color: $color-second;
+            animation-delay: 2s;
+        }
+
+        .item3 {
+            background-color: $color-third;
+            animation-delay: 3.5s;
+        }
+    }

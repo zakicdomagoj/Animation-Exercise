@@ -1,0 +1,9 @@
+@mixin font__family {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+@mixin background__picture {
+    background-image: url(blur-clean.jpg);
+}
+

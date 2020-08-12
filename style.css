@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@-webkit-keyframes a {
+  from {
+    -webkit-transform: translateY(-10vh);
+            transform: translateY(-10vh);
+  }
+  to {
+    -webkit-transform: translateY(60vh);
+            transform: translateY(60vh);
+  }
+}
+
+@keyframes a {
+  from {
+    -webkit-transform: translateY(-10vh);
+            transform: translateY(-10vh);
+  }
+  to {
+    -webkit-transform: translateY(60vh);
+            transform: translateY(60vh);
+  }
+}
+
+body {
+  background-image: url(blur-clean.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.container__items {
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  margin-top: -250px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 56px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  -webkit-animation: a 1.5s ease-out 1 forwards;
+          animation: a 1.5s ease-out 1 forwards;
+}
+
+.container .item1 {
+  background-color: #696969;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.container .item2 {
+  background-color: #D97077;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.container .item3 {
+  background-color: #FBB96D;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+/*# sourceMappingURL=style.css.map */
